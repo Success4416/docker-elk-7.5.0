@@ -1,0 +1,8 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+  - /home/chenggong/platform-car/logs/*.log
+
+output.logstash:
+  hosts: ['logstash:5044']
